@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'FirstApp';
   data="ABC";
+  getName(){
+    return 'Harshada' 
+  }
+
 }

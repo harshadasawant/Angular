@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    StylebindingComponent
+    StylebindingComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,

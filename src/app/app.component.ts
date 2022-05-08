@@ -11,5 +11,10 @@ export class AppComponent {
   getName(){
     return 'Harshada' 
   }
+  data1 ={
+    name:"harshada1",
+    course:"java1"
+  };
 
+//  data1="hars";
 }

@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { InputoutputpropertiesComponent } from './inputoutputproperties/inputoutputproperties.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     StylebindingComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    InputoutputpropertiesComponent
   ],
   imports: [
     BrowserModule,

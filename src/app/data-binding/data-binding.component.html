@@ -3,3 +3,7 @@
 <input type="text" name="id" disabled=true>
 
 <button (click)="onClick()">Click</button>
+
+<!-- two way binding -->
+<input type="text" [(ngModel)] = "name">
+<h1>{{name}}</h1>

@@ -1,8 +1,10 @@
 <p>data-binding works!</p>
+<!-- below line can called property binding -->
 <input type="text" name="id" [disabled]="isDisabled">
-<input type="text" name="id" disabled=true>
 
-<button (click)="onClick()">Click</button>
+<input type="text" name="id" disabled=true>
+<!-- below line called event binding  -->
+<button (click)="onClick()">Click</button> 
 
 <!-- two way binding -->
 <input type="text" [(ngModel)] = "name">

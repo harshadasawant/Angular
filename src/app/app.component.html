@@ -2,5 +2,15 @@
 <h1> Hello {{title}}</h1>
 <h1>{{getName()}}</h1>
 <app-data-binding ></app-data-binding>
-<app-inputoutputproperties  [item]="data1"></app-inputoutputproperties>
+<!-- <app-inputoutputproperties  [item]="data1"></app-inputoutputproperties> -->
 
+<!-- The event binding, (newItemEvent)='addItem($event)', connects the event in the child, newItemEvent, to the method in the parent, addItem().
+
+The $event contains the data that the user types into the <input> in the child template UI.
+
+To see the @Output() working, add the following to the parent's template: -->
+<app-child (newItemEvent)="addItem($event)"></app-child>
+
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+  </ul>

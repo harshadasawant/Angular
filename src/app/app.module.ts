@@ -9,6 +9,7 @@ import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { InputoutputpropertiesComponent } from './inputoutputproperties/inputoutputproperties.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { InputoutputpropertiesComponent } from './inputoutputproperties/inputout
     FooterComponent,
     StylebindingComponent,
     DataBindingComponent,
-    InputoutputpropertiesComponent
+    InputoutputpropertiesComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

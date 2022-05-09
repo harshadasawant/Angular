@@ -3,7 +3,7 @@
 <h1> Hello {{title}}</h1>
 <h1>{{getName()}}</h1> -->
 
-<app-data-binding ></app-data-binding>
+<!-- <app-data-binding ></app-data-binding> -->
 <!-- <app-inputoutputproperties  [item]="data1"></app-inputoutputproperties> -->
 
 <!-- The event binding, (newItemEvent)='addItem($event)', connects the event in the child, newItemEvent, to the method in the parent, addItem().
@@ -17,4 +17,5 @@ To see the @Output() working, add the following to the parent's template: -->
     <li *ngFor="let item of items">{{item}}</li>
   </ul> -->
 
-  <h3 appRedEl>from red edirective</h3>
+  <!-- <h3 appRedEl>from red edirective</h3> -->
+  <h3 [appHostBindingColor]="color">this is new</h3>

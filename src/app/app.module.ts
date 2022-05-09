@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { InputoutputpropertiesComponent } from './inputoutputproperties/inputoutputproperties.component';
 import { ChildComponent } from './child/child.component';
 import { RedElDirective } from './red-el.directive';
+import { HostBindingColorDirective } from './host-binding-color.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { RedElDirective } from './red-el.directive';
     DataBindingComponent,
     InputoutputpropertiesComponent,
     ChildComponent,
-    RedElDirective
+    RedElDirective,
+    HostBindingColorDirective
   ],
   imports: [
     BrowserModule,

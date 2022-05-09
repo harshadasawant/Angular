@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  color = 'yellow';
   title = 'FirstApp';
   data="ABC";
   getName(){
@@ -16,7 +17,7 @@ export class AppComponent {
     course:"java1"
   };
 
-//  data1="hars";
+//  data1="harshada";
 
 //  below code for child to parent
 items = ['item1', 'item2', 'item3', 'item4'];
@@ -24,4 +25,5 @@ items = ['item1', 'item2', 'item3', 'item4'];
 addItem(newItem: string) {
   this.items.push(newItem);
 }
+
 }

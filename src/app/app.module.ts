@@ -13,6 +13,7 @@ import { ChildComponent } from './child/child.component';
 import { RedElDirective } from './red-el.directive';
 import { HostBindingColorDirective } from './host-binding-color.directive';
 import { PipeComponent } from './pipe/pipe.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PipeComponent } from './pipe/pipe.component';
     ChildComponent,
     RedElDirective,
     HostBindingColorDirective,
-    PipeComponent
+    PipeComponent,
+    UsdInrPipe
   ],
   imports: [
     BrowserModule,

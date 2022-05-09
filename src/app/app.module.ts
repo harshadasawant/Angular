@@ -14,6 +14,8 @@ import { RedElDirective } from './red-el.directive';
 import { HostBindingColorDirective } from './host-binding-color.directive';
 import { PipeComponent } from './pipe/pipe.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import {TestService} from './services/test.service';
+import { DITestComponent } from './ditest/ditest.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +29,15 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     RedElDirective,
     HostBindingColorDirective,
     PipeComponent,
-    UsdInrPipe
+    UsdInrPipe,
+    DITestComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [TestService], //need to register service for dependency injection
   bootstrap: [AppComponent]
 })
 export class AppModule { }

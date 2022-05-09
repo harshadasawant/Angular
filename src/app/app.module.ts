@@ -12,6 +12,7 @@ import { InputoutputpropertiesComponent } from './inputoutputproperties/inputout
 import { ChildComponent } from './child/child.component';
 import { RedElDirective } from './red-el.directive';
 import { HostBindingColorDirective } from './host-binding-color.directive';
+import { PipeComponent } from './pipe/pipe.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HostBindingColorDirective } from './host-binding-color.directive';
     InputoutputpropertiesComponent,
     ChildComponent,
     RedElDirective,
-    HostBindingColorDirective
+    HostBindingColorDirective,
+    PipeComponent
   ],
   imports: [
     BrowserModule,

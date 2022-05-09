@@ -4,7 +4,7 @@ import { Directive, HostBinding,Input, HostListener } from '@angular/core';
   selector: '[appHostBindingColor]'
 })
 export class HostBindingColorDirective {
-@Input() appHostBindingColor = ''
+
 @HostBinding('style.backgroundColor') color:string='red'
 @HostListener('mouseenter') setMouseEnter() {
   this.color="yellow";

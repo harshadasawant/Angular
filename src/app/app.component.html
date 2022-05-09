@@ -1,6 +1,8 @@
-<app-header></app-header>
+<!-- <app-stylebinding></app-stylebinding> -->
+<!-- <app-header></app-header>
 <h1> Hello {{title}}</h1>
-<h1>{{getName()}}</h1>
+<h1>{{getName()}}</h1> -->
+
 <app-data-binding ></app-data-binding>
 <!-- <app-inputoutputproperties  [item]="data1"></app-inputoutputproperties> -->
 
@@ -9,8 +11,10 @@
 The $event contains the data that the user types into the <input> in the child template UI.
 
 To see the @Output() working, add the following to the parent's template: -->
-<app-child (newItemEvent)="addItem($event)"></app-child>
+<!-- <app-child (newItemEvent)="addItem($event)"></app-child>
 
 <ul>
     <li *ngFor="let item of items">{{item}}</li>
-  </ul>
+  </ul> -->
+
+  <h3 appRedEl>from red edirective</h3>

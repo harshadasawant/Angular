@@ -10,6 +10,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
 import { InputoutputpropertiesComponent } from './inputoutputproperties/inputoutputproperties.component';
 import { ChildComponent } from './child/child.component';
+import { RedElDirective } from './red-el.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ChildComponent } from './child/child.component';
     StylebindingComponent,
     DataBindingComponent,
     InputoutputpropertiesComponent,
-    ChildComponent
+    ChildComponent,
+    RedElDirective
   ],
   imports: [
     BrowserModule,

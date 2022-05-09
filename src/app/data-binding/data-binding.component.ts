@@ -12,7 +12,7 @@ export class DataBindingComponent implements OnInit {
   ngOnInit(): void {
   }
 isDisabled: boolean = true;
-name : string ="Harsha"
+name : string ="Harsha123"
 
 onClick(){
   console.log("Button has clicked");

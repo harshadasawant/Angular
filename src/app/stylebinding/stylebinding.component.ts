@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class StylebindingComponent implements OnInit {
   color='purple';
   updateColor(){
-    this.color='brown';
+    this.color='red';
   }
   constructor() { }
 

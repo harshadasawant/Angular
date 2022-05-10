@@ -1,8 +1,12 @@
 <p>template-form works!</p>
 <form #loginForm = "ngForm" (ngSubmit)="loginUser(loginForm.value)" >
-    <input type="text" name="user" ngModel>
+    <input type="text" name="user" #user="ngModel" required ngModel>
     <br/>
-    <input type="password" name="password" ngModel>
+    <span style="color: red;" *ngIf="user.invalid && user.touched" >This field is not valid</span>
     <br/>
-    <button>Login</button>
+    <input type="password" name="password" ngModel #password="ngModel" minlength="2" required>
+    <br/>
+    <span style="color: red;" *ngIf="password.invalid && password.touched" >This field is not valid</span>
+    <br/>
+    <button [disabled]="loginForm.invalid">Login</button>
     </form>

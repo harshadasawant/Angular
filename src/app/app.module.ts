@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { StylebindingComponent } from './stylebinding/stylebinding.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputoutputpropertiesComponent } from './inputoutputproperties/inputoutputproperties.component';
 import { ChildComponent } from './child/child.component';
 import { RedElDirective } from './red-el.directive';
@@ -16,6 +16,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import {TestService} from './services/test.service';
 import { DITestComponent } from './ditest/ditest.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +31,14 @@ import { DITestComponent } from './ditest/ditest.component';
     HostBindingColorDirective,
     PipeComponent,
     UsdInrPipe,
-    DITestComponent
+    DITestComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [TestService], //need to register service for dependency injection
   bootstrap: [AppComponent]

@@ -17,6 +17,7 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import {TestService} from './services/test.service';
 import { DITestComponent } from './ditest/ditest.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { TemplateFormComponent } from './template-form/template-form.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     PipeComponent,
     UsdInrPipe,
     DITestComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,

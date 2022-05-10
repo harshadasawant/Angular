@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup, FormControlName} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-reactive-form',
@@ -13,10 +13,16 @@ export class ReactiveFormComponent implements OnInit {
   ngOnInit(): void {
   }
   loginForm = new FormGroup({
-    user: new FormControl(''),
-    password : new FormControl(''),
+    user: new FormControl('', [Validators.required,Validators.email]),
+    password : new FormControl('',[Validators.required, Validators.minLength(5)]),
   })
   loginUser(){
     console.warn(this.loginForm.value);
+  }
+  get user(){
+    return this.loginForm.get('user')
+  }
+  get password(){
+    return this.loginForm.get('password')
   }
 }

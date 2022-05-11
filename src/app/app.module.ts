@@ -18,6 +18,8 @@ import {TestService} from './services/test.service';
 import { DITestComponent } from './ditest/ditest.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapCompComponent } from './bootstrap-comp/bootstrap-comp.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,15 @@ import { TemplateFormComponent } from './template-form/template-form.component';
     UsdInrPipe,
     DITestComponent,
     ReactiveFormComponent,
-    TemplateFormComponent
+    TemplateFormComponent,
+    BootstrapCompComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [TestService], //need to register service for dependency injection
   bootstrap: [AppComponent]

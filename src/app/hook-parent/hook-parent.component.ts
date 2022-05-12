@@ -20,9 +20,9 @@ export class HookParentComponent implements OnInit{
   toggleChild(){
     this.isChild = !this.isChild;
   }
-  // ngOnChanges(changes: SimpleChanges): void {
-  //   console.warn("Parent Onchange is called");
-  // }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.warn("Parent Onchange is called");
+  }
   // ngDoCheck(): void {
   //   console.warn("parent console do check");
   // }

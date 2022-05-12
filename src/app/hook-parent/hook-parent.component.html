@@ -2,7 +2,7 @@
 <button (click)="toggleChild()">toggleChild</button>
 <input type="text" [(ngModel)]="channelName">
 <app-hook-child *ngIf="isChild" [channelName]="channelName">
-    <p #parentcontentVar>this is ng-content</p>
+    <p>this is ng-content</p>
 </app-hook-child>
 
 

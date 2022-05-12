@@ -5,8 +5,8 @@ import { Component, OnChanges, OnDestroy, OnInit, SimpleChanges, Input, DoCheck,
   templateUrl: './hook-child.component.html',
   styleUrls: ['./hook-child.component.css']
 })
-export class HookChildComponent implements OnInit, OnDestroy, OnChanges{
-//  OnDestroy, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
+export class HookChildComponent implements OnInit,
+  OnDestroy, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
 counter =0;
 interval : any;
 @Input()
@@ -32,20 +32,20 @@ channelName =  "";
   ngOnChanges(changes: SimpleChanges): void {
     console.warn("Child Onchange is called");
  }
-//  ngDoCheck(): void {
-//    console.warn("child do check");
-//  }
-//  ngAfterContentInit(): void {
-//    console.warn("After Content Init");
-//  }
-//  ngAfterContentChecked(): void {
-//   console.warn("ngAfter content checked");
-//  }
-//  ngAfterViewInit(): void {
-//    console.warn("After view Init");
-//  }
-//  ngAfterViewChecked(): void {
-//   console.warn("After view checked");
-//  }
+ ngDoCheck(): void {
+   console.warn("child do check");
+ }
+ ngAfterContentInit(): void {
+   console.warn("After Content Init");
+ }
+ ngAfterContentChecked(): void {
+  console.warn("ngAfter content checked");
+ }
+ ngAfterViewInit(): void {
+   console.warn("After view Init");
+ }
+ ngAfterViewChecked(): void {
+  console.warn("After view checked");
+ }
 
 }

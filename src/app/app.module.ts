@@ -20,6 +20,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './template-form/template-form.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BootstrapCompComponent } from './bootstrap-comp/bootstrap-comp.component';
+import { HookParentComponent } from './hook-parent/hook-parent.component';
+import { HookChildComponent } from './hook-child/hook-child.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { BootstrapCompComponent } from './bootstrap-comp/bootstrap-comp.componen
     DITestComponent,
     ReactiveFormComponent,
     TemplateFormComponent,
-    BootstrapCompComponent
+    BootstrapCompComponent,
+    HookParentComponent,
+    HookChildComponent
   ],
   imports: [
     BrowserModule,

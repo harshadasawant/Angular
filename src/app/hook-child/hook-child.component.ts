@@ -5,7 +5,7 @@ import { Component, OnChanges, OnDestroy, OnInit, SimpleChanges, Input, DoCheck,
   templateUrl: './hook-child.component.html',
   styleUrls: ['./hook-child.component.css']
 })
-export class HookChildComponent implements OnInit{
+export class HookChildComponent implements OnInit, OnDestroy{
 //  OnDestroy, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked {
 counter =0;
 interval : any;
@@ -25,10 +25,10 @@ channelName =  "";
     // }, 1000)
   }
 
-//   ngOnDestroy(): void {
-//     clearInterval(this.interval);
-//     console.warn("On Destroy called");
-//   }
+  ngOnDestroy(): void {
+    clearInterval(this.interval);
+    console.warn("On Destroy called");
+  }
 //   ngOnChanges(changes: SimpleChanges): void {
 //     console.warn("Child Onchange is called");
 //  }

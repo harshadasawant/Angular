@@ -8,7 +8,7 @@ import { Component, DoCheck, OnChanges, OnInit, SimpleChanges } from '@angular/c
 export class HookParentComponent implements OnInit{
 //, OnChanges, DoCheck {
 
-  isChild=true;
+  isChild=false;
   channelName = '';
   constructor() {
     console.warn("parent constructor");
@@ -17,9 +17,9 @@ export class HookParentComponent implements OnInit{
   ngOnInit(): void {
     console.warn("parent init");
   }
-  // toggleChild(){
-  //   this.isChild = !this.isChild;
-  // }
+  toggleChild(){
+    this.isChild = !this.isChild;
+  }
   // ngOnChanges(changes: SimpleChanges): void {
   //   console.warn("Parent Onchange is called");
   // }

@@ -29,6 +29,9 @@ import { NopageComponent } from './nopage/nopage.component';
 import { AboutcompanyComponent } from './aboutcompany/aboutcompany.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeeListComponent } from './employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -55,14 +58,17 @@ import { LoginComponent } from './login/login.component';
     NopageComponent,
     AboutcompanyComponent,
     AboutmeComponent,
-    LoginComponent
+    LoginComponent,
+    EmployeeComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [TestService], //need to register service for dependency injection
   bootstrap: [AppComponent]

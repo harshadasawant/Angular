@@ -22,6 +22,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BootstrapCompComponent } from './bootstrap-comp/bootstrap-comp.component';
 import { HookParentComponent } from './hook-parent/hook-parent.component';
 import { HookChildComponent } from './hook-child/hook-child.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { UserComponent } from './user/user.component';
+import { NopageComponent } from './nopage/nopage.component';
+import { AboutcompanyComponent } from './aboutcompany/aboutcompany.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +48,14 @@ import { HookChildComponent } from './hook-child/hook-child.component';
     TemplateFormComponent,
     BootstrapCompComponent,
     HookParentComponent,
-    HookChildComponent
+    HookChildComponent,
+    AboutComponent,
+    HomeComponent,
+    UserComponent,
+    NopageComponent,
+    AboutcompanyComponent,
+    AboutmeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

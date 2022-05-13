@@ -32,6 +32,7 @@ import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { SimpleformComponent } from './simpleform/simpleform.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     AboutmeComponent,
     LoginComponent,
     EmployeeComponent,
-    EmployeeListComponent
+    EmployeeListComponent,
+    SimpleformComponent
   ],
   imports: [
     BrowserModule,

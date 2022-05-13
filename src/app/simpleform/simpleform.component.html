@@ -1,0 +1,7 @@
+<form #userForm="ngForm" (ngSubmit)="getUserFormData(userForm.value)">
+Name : <input type="text" name = "name" [(ngModel)]="employee.name"><br><br>
+Status : <input type="text" name = "status" [(ngModel)]="employee.status"><br><br>
+Age : <input type="text" name = "age" [(ngModel)]="employee.age"><br><br>
+Email : <input type="text" name = "email" [(ngModel)]="employee.email"><br><br>
+<button type="submit" (click)="addEmployee()">Add new User</button>
+</form>

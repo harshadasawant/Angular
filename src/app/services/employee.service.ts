@@ -28,7 +28,5 @@ export class EmployeeService {
     return this.http.get<IEmployee1[]>("http://localhost:9090/getAllEmployee");
   }
 
-  saveEmployee(data : any){
-    return this.http.post("http://localhost:9090/addEmployee", data);
-  }
+
 }

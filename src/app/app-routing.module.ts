@@ -7,11 +7,13 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { AboutcompanyComponent } from './aboutcompany/aboutcompany.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {
     component: AboutComponent,
     path : 'about',
+    canActivate:[AuthGuard],
     children:[
       {path:'company',component:AboutcompanyComponent},
       {path:'me',component:AboutmeComponent},

@@ -1,7 +1,7 @@
 <p>reactive-form works!</p>
 
 <form [formGroup]="loginForm" (ngSubmit)="loginUser()" >
-<input type="email" name="user" formControlName="user" >
+<input type="text" name="user" formControlName="user" >
 <br/>
 <span style="color: red;" *ngIf="user && user.invalid && user.touched" >This field is not valid</span>
 <br>
@@ -10,4 +10,7 @@
 <span style="color: red;" *ngIf="password && password.invalid && password.touched" >This field is not valid</span>
 <br>
 <button [disabled]="loginForm.invalid">Login</button>
+<button (click)="callJwtApi()">Login</button>
 </form>
+<a routerLink="about">about</a><br>
+<router-outlet></router-outlet>

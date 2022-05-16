@@ -29,10 +29,12 @@ import { NopageComponent } from './nopage/nopage.component';
 import { AboutcompanyComponent } from './aboutcompany/aboutcompany.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { LoginComponent } from './login/login.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { SimpleformComponent } from './simpleform/simpleform.component';
+import { TokenInterceptorService } from './service/token-interceptor.service';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,13 @@ import { SimpleformComponent } from './simpleform/simpleform.component';
     NgbModule,
     HttpClientModule
   ],
-  providers: [TestService], //need to register service for dependency injection
+  providers: [TestService,AuthGuard,
+    {
+      provide:HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi:true
+    }
+  ], //need to register service for dependency injection
   bootstrap: [AppComponent]
 })
 export class AppModule { }

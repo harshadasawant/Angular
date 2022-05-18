@@ -27,7 +27,7 @@ export class ReactiveFormComponent implements OnInit {
             console.log(result);
           localStorage.setItem('token',result.token);
           this.router.navigate(['/about']);
-            this.bearer = result.token;
+            // this.bearer = result.token;
           } else{
             alert(result.token);
           }
